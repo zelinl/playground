@@ -13,7 +13,8 @@ def run_game():
 
     while True:
         # 监听键盘和鼠标事件
-        gf.check_events()
+        gf.check_events(ship)
+        ship.update()
         gf.update_screen(ai_settings, screen, ship)
 
 run_game()
